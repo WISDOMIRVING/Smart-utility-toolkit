@@ -7,6 +7,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import UnitConverterScreen from './src/screens/UnitConverterScreen';
 import CurrencyConverterScreen from './src/screens/CurrencyConverterScreen';
 import BMICalculatorScreen from './src/screens/BMICalculatorScreen';
+import TaskManagerScreen from './src/screens/TaskManagerScreen';
 import { Colors } from './src/theme/colors';
 
 const Stack = createNativeStackNavigator();
@@ -28,6 +29,7 @@ export default function App() {
           <Stack.Screen name="UnitConverter" component={UnitConverterScreen} />
           <Stack.Screen name="CurrencyConverter" component={CurrencyConverterScreen} />
           <Stack.Screen name="BMICalculator" component={BMICalculatorScreen} />
+          <Stack.Screen name="TaskManager" component={TaskManagerScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

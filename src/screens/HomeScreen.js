@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Ruler, DollarSign, Activity, Settings } from 'lucide-react-native';
+import { Ruler, DollarSign, Activity, Settings, CheckSquare } from 'lucide-react-native';
 import { Colors, Gradients } from '../theme/colors';
 import GlassCard from '../components/GlassCard';
 
@@ -34,6 +34,14 @@ const HomeScreen = ({ navigation }) => {
       description: 'Health checking',
       colors: Gradients.accent,
       screen: 'BMICalculator',
+    },
+    {
+      id: 'tasks',
+      title: 'Task Manager',
+      icon: CheckSquare,
+      description: 'Checklist & Todo',
+      colors: Gradients.primary,
+      screen: 'TaskManager',
     },
   ];
 
